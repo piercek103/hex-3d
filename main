@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Print Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>3D Print Hub</h1>
+        <p>Your design, our print.</p>
+    </header>
+
+    <section class="upload-section">
+        <h2>Upload Your 3D Model</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="model" accept=".stl,.obj" required>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>FDM Printing – Budget-friendly, durable parts</li>
+            <li>SLA Printing – High-detail resin printing</li>
+            <li>Custom Material Requests</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@3dprinthub.com</p>
+        <p>Phone: +1 234 567 8901</p>
+    </section>
+
+    <footer>
+        <p>© 2025 3D Print Hub</p>
+    </footer>
+</body>
+</html>
